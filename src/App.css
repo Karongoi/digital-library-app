@@ -1,0 +1,127 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-accent: #facc15;
+  --color-bg: #f9fafb;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --radius: 1rem;
+  --shadow-light: 0 8px 24px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.1);
+  --transition-fast: 0.2s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+
+.read-the-docs {
+  color: var(--color-muted);
+}
+
+img.book-cover {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease;
+}
+img.book-cover:hover {
+  transform: scale(1.03);
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.book-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+.book-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.book-author {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+.book-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
