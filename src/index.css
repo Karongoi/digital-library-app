@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root {
   --color-primary: #3b82f6;
   --color-accent: #facc15;
@@ -20,16 +21,13 @@ body {
 }
 
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  text-align: center;
+  height: 100vh;
 }
-
 
 .logo {
   height: 6em;
@@ -59,7 +57,6 @@ body {
   }
 }
 
-
 .card {
   padding: 2rem;
   background-color: #ffffff;
@@ -71,7 +68,6 @@ body {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
 }
-
 
 .read-the-docs {
   color: var(--color-muted);
@@ -94,6 +90,7 @@ img.book-cover:hover {
   gap: 2rem;
   width: 100%;
   padding: 1rem 0;
+  max-width: 100%;
 }
 
 .book-card {

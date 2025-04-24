@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 function AddBook() {
   const navigate = useNavigate();
@@ -20,19 +21,30 @@ function AddBook() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
-    fetch("http://localhost:3001/books", {
+  
+    fetch("http://localhost:8080/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(formData)
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to add book");
+        }
+        return res.json();
+      })
       .then(() => {
+        toast.success("Book added successfully!");
         navigate("/library");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        toast.error(" Failed to add book. Please try again.");
       });
   }
+  
 
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white rounded-xl shadow-md mt-12">

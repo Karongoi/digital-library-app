@@ -2,7 +2,7 @@
 
 This app has been developed using react.
 
-Currently, two official plugins are available:
+its a Digital Library application where you can get books, add books, edit books and delete books.
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
