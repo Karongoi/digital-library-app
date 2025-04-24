@@ -15,7 +15,7 @@ function BookList() {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:8080/books/${id}`)
+    fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBook(data);
@@ -29,7 +29,7 @@ function BookList() {
 
   function handleDelete() {
     if (window.confirm("Are you sure you want to delete this book?")) {
-      fetch(`http://localhost:8080/books/${id}`, { method: "DELETE" })
+      fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`, { method: "DELETE" })
         .then(() => {
           toast.success("Book deleted");
           navigate("/library");
@@ -56,7 +56,7 @@ function BookList() {
   function handleUpdate(e) {
     e.preventDefault();
 
-    fetch(`http://localhost:8080/books/${id}`, {
+    fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
