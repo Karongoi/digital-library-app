@@ -12,17 +12,14 @@ function Home() {
           <p className="mb-6 text-lg leading-relaxed">
             Browse through our collection, add your favorite books, and start organizing your digital library today!
           </p>
-          <a
-            href="/library"
+          <div
             className="bg-yellow-300 hover:bg-yellow-400 text-blue-800 font-semibold py-2 px-8 rounded-full transition-colors duration-300 shadow-md"
           >
-            Explore Books
-          </a>
+            Go to Library to Explore Books
+          </div>
         </div>
       </div>
     );
   }
   
   export default Home;
-  
-  
