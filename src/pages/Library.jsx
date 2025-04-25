@@ -7,7 +7,7 @@ function Library() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8080/books")
+    fetch("https://digital-library-app-uaxx.onrender.com/books")
       .then((res) => res.json())
       .then((data) => setBooks(data))
       .catch((err) => console.error("Error fetching books:", err));

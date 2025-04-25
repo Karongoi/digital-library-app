@@ -29,7 +29,7 @@ function AddBook() {
       return;
     }
 
-    fetch("http://localhost:8080/books", {
+    fetch("https://digital-library-app-uaxx.onrender.com/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
