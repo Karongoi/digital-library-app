@@ -5,126 +5,160 @@
       "title": "The Pragmatic Programmer",
       "author": "Andrew Hunt",
       "description": "A practical guide to programming best practices.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX331_BO1,204,203,200_.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41as+WafrFL._SX331_BO1,204,203,200_.jpg",
+      "readLink": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
     },
     {
       "id": 2,
       "title": "Clean Code",
       "author": "Robert C. Martin",
       "description": "Even bad code can function. But clean code is a joy to read.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL._SX374_BO1,204,203,200_.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL._SX374_BO1,204,203,200_.jpg",
+      "readLink": "https://www.investigatii.md/uploads/resurse/Clean_Code.pdf"
     },
     {
       "id": 3,
       "title": "You Don’t Know JS Yet",
       "author": "Kyle Simpson",
       "description": "Deep dive into the core mechanisms of the JavaScript language.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg",
+      "readLink": "https://github.com/getify/You-Dont-Know-JS"
     },
     {
       "id": 4,
       "title": "Eloquent JavaScript",
       "author": "Marijn Haverbeke",
       "description": "A modern introduction to programming using JavaScript.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91asIC1fRwL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91asIC1fRwL.jpg",
+      "readLink": "https://eloquentjavascript.net/"
     },
     {
       "id": 5,
       "title": "JavaScript: The Good Parts",
       "author": "Douglas Crockford",
       "description": "Unearths the elegant parts of JavaScript.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81kqrwS1nNL.jpg",
+      "readLink": "http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf"
     },
     {
       "id": 6,
       "title": "Refactoring",
       "author": "Martin Fowler",
       "description": "Improving the design of existing code without changing its behavior.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/518FqJvR9aL._SX376_BO1,204,203,200_.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/518FqJvR9aL._SX376_BO1,204,203,200_.jpg",
+      "readLink": "https://martinfowler.com/books/refactoring.html"
     },
     {
       "id": 7,
       "title": "Design Patterns",
       "author": "Erich Gamma et al.",
       "description": "Reusable object-oriented software design solutions.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg",
+      "readLink": "https://sbcode.net/softwaredesignpattern/"
     },
     {
       "id": 8,
       "title": "Introduction to Algorithms",
       "author": "Cormen, Leiserson, Rivest, Stein",
       "description": "The bible of algorithms and data structures.",
-      "coverImage": "https://www.pexels.com/photo/photo-of-a-boy-playing-with-his-summer-hat-in-a-field-17498734/"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81GtJvGo5eL.jpg",
+      "readLink": "https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844"
     },
     {
       "id": 9,
       "title": "Cracking the Coding Interview",
       "author": "Gayle Laakmann McDowell",
       "description": "189 programming questions and solutions.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41R1vX4HfIL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41R1vX4HfIL.jpg",
+      "readLink": "https://www.crackingthecodinginterview.com/"
     },
     {
       "id": 10,
       "title": "The Art of Computer Programming",
       "author": "Donald Knuth",
       "description": "A comprehensive monograph on computer programming algorithms.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/51ESTwvVqdL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/51ESTwvVqdL.jpg",
+      "readLink": "https://www-cs-faculty.stanford.edu/~knuth/taocp.html"
     },
     {
       "id": 11,
       "title": "Head First Design Patterns",
       "author": "Eric Freeman & Elisabeth Robson",
       "description": "A brain-friendly guide to design patterns.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg",
+      "readLink": "https://learning.oreilly.com/library/view/head-first-design/0596007124/"
     },
     {
       "id": 12,
       "title": "Structure and Interpretation of Computer Programs",
       "author": "Harold Abelson",
       "description": "A foundational text for computer science.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91lEca+9qPL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91lEca+9qPL.jpg",
+      "readLink": "https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/"
     },
     {
       "id": 13,
       "title": "Algorithms to Live By",
       "author": "Brian Christian",
       "description": "The computer science of human decisions.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71UypkUjStL.jpg",
+      "readLink": "https://brianchristian.org/algorithms-to-live-by/"
     },
     {
       "id": 14,
       "title": "Soft Skills",
       "author": "John Sonmez",
       "description": "The software developer’s life manual.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81WDZ2CAf0L.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81WDZ2CAf0L.jpg",
+      "readLink": "https://simpleprogrammer.com/softskills/"
     },
     {
       "id": 15,
       "title": "Code",
       "author": "Charles Petzold",
       "description": "The hidden language of computer hardware and software.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41jEbK-jG+L.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41jEbK-jG+L.jpg",
+      "readLink": "https://www.microsoftpressstore.com/store/code-the-hidden-language-of-computer-hardware-and-9780735611313"
     },
     {
       "id": 16,
       "title": "Working Effectively with Legacy Code",
       "author": "Michael Feathers",
       "description": "How to safely make changes in tangled legacy systems.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/518FqJvR9aL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/518FqJvR9aL.jpg",
+      "readLink": "https://www.oreilly.com/library/view/working-effectively-with/0131177052/"
     },
     {
       "id": 17,
       "title": "The Mythical Man-Month",
       "author": "Frederick P. Brooks Jr.",
       "description": "Essays on software engineering.",
-      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71ldP3avPBL.jpg"
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71ldP3avPBL.jpg",
+      "readLink": "https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month"
     },
     {
-      "title": "fsd",
-      "author": "dan",
-      "description": "rfd",
-      "coverImage": "https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885_1280.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fphotos%2Ftree-sunset-clouds-sky-silhouette-736885%2F&docid=J7zy-dl2IZQspM&tbnid=aVgXecnmQ_f1MM&vet=12ahUKEwjd9KHIju-MAxXI0wIHHadDIa4QM3oECGsQAA..i&w=1280&h=797&hcb=2&ved=2ahUKEwjd9KHIju-MAxXI0wIHHadDIa4QM3oECGsQAA",
-      "id": 18
+      "id": 18,
+      "title": "The Phoenix Project",
+      "author": "Gene Kim, Kevin Behr, George Spafford",
+      "description": "A novel about IT, DevOps, and helping your business win.",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/51vvdO+zYCL._SX331_BO1,204,203,200_.jpg",
+      "readLink": "https://itrevolution.com/the-phoenix-project/"
+    },
+    {
+      "id": 19,
+      "title": "Don't Make Me Think",
+      "author": "Steve Krug",
+      "description": "A common-sense approach to web usability.",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41G0C2kR09L._SX396_BO1,204,203,200_.jpg",
+      "readLink": "https://sensible.com/dont-make-me-think/"
+    },
+    {
+      "id": 20,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "description": "Rules for focused success in a distracted world.",
+      "coverImage": "https://images-na.ssl-images-amazon.com/images/I/41y71bXyV-L._SX322_BO1,204,203,200_.jpg",
+      "readLink": "https://www.calnewport.com/books/deep-work/"
     }
   ]
 }

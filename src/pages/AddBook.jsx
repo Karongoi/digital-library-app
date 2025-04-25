@@ -21,8 +21,15 @@ function AddBook() {
 
   function handleSubmit(e) {
     e.preventDefault();
-  
-    fetch("https://digital-library-app-uaxx.onrender.com/books", {
+
+    const { title, author, description, coverImage } = formData;
+
+    if (!title || !author || !description || !coverImage) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
+    fetch("http://localhost:8080/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -41,10 +48,9 @@ function AddBook() {
       })
       .catch((error) => {
         console.error("Error:", error);
-        toast.error(" Failed to add book. Please try again.");
+        toast.error("Failed to add book. Please try again.");
       });
   }
-  
 
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white rounded-xl shadow-md mt-12">
@@ -53,77 +59,55 @@ function AddBook() {
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label
-            htmlFor="title"
-            className="block text-lg font-medium text-gray-700"
-          >
-            Title
-          </label>
+          <label htmlFor="title" className="block text-lg font-medium text-gray-700">Title</label>
           <input
             type="text"
             name="title"
             id="title"
             placeholder="Enter book title"
-            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500"
             value={formData.title}
             onChange={handleChange}
-            required
           />
         </div>
 
         <div>
-          <label
-            htmlFor="author"
-            className="block text-lg font-medium text-gray-700"
-          >
-            Author
-          </label>
+          <label htmlFor="author" className="block text-lg font-medium text-gray-700">Author</label>
           <input
             type="text"
             name="author"
             id="author"
             placeholder="Enter author's name"
-            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500"
             value={formData.author}
             onChange={handleChange}
-            required
           />
         </div>
 
         <div>
-          <label
-            htmlFor="coverImage"
-            className="block text-lg font-medium text-gray-700"
-          >
-            Cover Image URL
-          </label>
+          <label htmlFor="coverImage" className="block text-lg font-medium text-gray-700">Cover Image URL</label>
           <input
             type="text"
             name="coverImage"
             id="coverImage"
             placeholder="Enter cover image URL"
-            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500"
             value={formData.coverImage}
             onChange={handleChange}
           />
         </div>
 
         <div>
-          <label
-            htmlFor="description"
-            className="block text-lg font-medium text-gray-700"
-          >
-            Description
-          </label>
+          <label htmlFor="description" className="block text-lg font-medium text-gray-700">Description</label>
           <textarea
             name="description"
             id="description"
             rows="5"
             placeholder="Enter book description"
-            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500"
             value={formData.description}
             onChange={handleChange}
-          ></textarea>
+          />
         </div>
 
         <button
