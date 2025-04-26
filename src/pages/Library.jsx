@@ -8,7 +8,7 @@ function Library() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://digital-library-app-uaxx.onrender.com")
+    fetch("https://digital-library-app-uaxx.onrender.com/books")
       .then((res) => res.json())
       .then((data) => setBooks(data))
       .catch((err) => console.error("Error fetching books:", err));
@@ -24,7 +24,7 @@ function Library() {
 
   function handleDelete(id) {
     if (confirm("Are you sure you want to delete this book?")) {
-      fetch(`https://digital-library-app-uaxx.onrender.com/${id}`, {
+      fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`, {
         method: "DELETE",
       })
         .then((res) => {

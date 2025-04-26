@@ -14,7 +14,7 @@ function BookList() {
   });
 
   useEffect(() => {
-    fetch(`https://digital-library-app-uaxx.onrender.com/${id}`)
+    fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setBook(data);
@@ -36,7 +36,7 @@ function BookList() {
 
   function handleUpdate(e) {
     e.preventDefault();
-    fetch(`https://digital-library-app-uaxx.onrender.com/${id}`, {
+    fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)

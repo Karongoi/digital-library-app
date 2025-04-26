@@ -19,7 +19,7 @@ function AddBook() {
   // Load existing book if editing
   useEffect(() => {
     if (editId) {
-      fetch(`https://digital-library-app-uaxx.onrender.com/${editId}`)
+      fetch(`https://digital-library-app-uaxx.onrender.com/books/${editId}`)
         .then((res) => res.json())
         .then((data) => setFormData(data))
         .catch((err) => toast.error("Error loading book for editing."));
@@ -45,7 +45,7 @@ function AddBook() {
     }
 
     // If editing, use PUT
-    const url = editId ? `https://digital-library-app-uaxx.onrender.com/${editId}` : "https://digital-library-app-uaxx.onrender.com";
+    const url = editId ? `https://digital-library-app-uaxx.onrender.com/books/${editId}` : "https://digital-library-app-uaxx.onrender.com/books";
     const method = editId ? "PUT" : "POST";
 
     fetch(url, {

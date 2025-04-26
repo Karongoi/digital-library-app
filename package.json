@@ -1,7 +1,7 @@
 {
   "name": "digital-library-app-v2",
   "private": true,
-  "proxy": "https://digital-library-app-uaxx.onrender.com",
+  "proxy": "https://digital-library-app-uaxx.onrender.com/books",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
