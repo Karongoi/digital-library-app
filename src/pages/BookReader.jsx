@@ -6,7 +6,7 @@ function BookReader() {
   const [book, setBook] = useState(null);
 
   useEffect(() => {
-    fetch(`https://digital-library-app-uaxx.onrender.com/books/${id}`)
+    fetch(`https://digital-library-app-uaxx.onrender.com/${id}`) // ✅ corrected URL
       .then((res) => res.json())
       .then((data) => setBook(data))
       .catch((err) => console.error("Error fetching book:", err));
